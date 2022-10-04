@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.graph {
+  position: relative;
+  margin: 200px;
+  width: 1000px;
+  height: 400px;
+  background-color: azure;
+}
+.canvas {
+  background-color: azure;
+}
