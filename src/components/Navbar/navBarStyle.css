@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
 .navbar {
   box-sizing: border-box;
@@ -16,8 +17,10 @@
   right: 0px;
   top: 0px;
 
-  background: #161a1f;
+  background: #15202b;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px, rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
 }
 
 .logo {
@@ -32,7 +35,6 @@
 
   width: auto;
   height: auto;
-
 }
 
 .logo-text {
@@ -42,9 +44,8 @@
   font-weight: 500;
   font-size: 30px;
   line-height: 36px;
-  font-family: "Open Sans";
+  font-family: "Lobster", cursive;
   color: #ffffff;
-
 }
 
 .menu {

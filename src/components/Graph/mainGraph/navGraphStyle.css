@@ -13,13 +13,13 @@ body {
   flex-direction: column;
   position: relative;
   margin: 200px;
-  background-color: azure;
-}
-.canvas {
-  background-color: azure;
+  background-color: #1A191C;
+  border-radius: 5px;
+  /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px; */
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px,rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;  
 }
 
-.NavChart{
+.NavChart {
   height: 400px;
   width: 800px;
 }
@@ -29,11 +29,11 @@ body {
 
 } */
 
-.info{
+.info {
   position: relative;
   height: 100px;
   border-style: solid;
-  margin: 0px 50px;
+  margin: 0px 50px 50px 50px;
 }
 .RangeChart,
 .rangeSliders {
@@ -45,9 +45,10 @@ body {
 .rangeSliders {
   z-index: 10;
   padding-left: 10px;
+  background: transparent;
 }
 
-input[type="range"]::-webkit-slider-thumb {
+/* input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   cursor: pointer;
   transition: all 0.15s ease-in-out;
@@ -57,21 +58,78 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 0 5px #00000040;
   border: 1px solid #00000040;
   border-radius: 50%;
-}
+} */
 
 .rangeSlider {
+  z-index: 15;
   appearance: none;
-  width: 340px;
-  background-color: rgb(0, 0, 0, 0.5);
+  position: absolute;
+  width: 680px;
   height: 100px;
-  /* border-radius: 6px; */
+  background: transparent;
+  /* background: linear-gradient(90deg, rgba(254,254,254,1) 25%, rgba(7,7,236,1) 47%, rgba(255,255,255,1) 73%); */
+
   /* margin: 0 10px; */
 }
-
-/* input[type="range"]::-webkit-slider-runnable-track{
-    appearance: none;
-    background-color: rgb(255, 255, 255, 0.5);
+/* 
+input[type="range"]::-webkit-slider-runnable-track{
+    cursor: pointer;
     height: 100px;
+    
+  
 } */
 
 /*  */
+
+.range-slider {
+  width: 700px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.range-slider input[type="range"] {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+input[type="range"] {
+  appearance: none;
+  width: 100%;
+  pointer-events: none;
+  background: transparent;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 700px;
+  height: 100px;
+  cursor: move;
+  background: transparent;
+  border-radius: none;
+  box-shadow: none;
+  border: 0;
+  /* pointer-events:none; */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  z-index: 2;
+  position: relative;
+  cursor: ew-resize;
+  box-shadow: none;
+  border: none;
+  height: 100px;
+  width: 16px;
+  /* border-radius: 25px; */
+  background: #444;
+  /* cursor: pointer; */
+  appearance: none;
+  pointer-events: auto;
+  /* margin-top: -5px; */
+}
