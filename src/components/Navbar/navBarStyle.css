@@ -45,7 +45,7 @@
   font-size: 30px;
   line-height: 36px;
   font-family: "Lobster", cursive;
-  color: #ffffff;
+  text-decoration: none;
 }
 
 .menu {
@@ -57,4 +57,10 @@
   gap: 3rem;
   align-items: center;
   margin: 0 auto;
+  
+}
+
+a {
+  text-decoration: none;
+  color: white;
 }

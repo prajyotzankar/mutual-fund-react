@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.searchInput{
+    margin: 50px;
+}
+.input_container {
+  width: 350px;
+  position: relative;
+}
+.label {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #b3b3b3;
+}
+.text_input {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2f2c45;
+  background: #272530;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.label::before {
+  content: "";
+  height: 5px;
+  background: #272530;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+
+.text_input:focus {
+  border: 2px solid #7e4ccb;
+}
+
+.text_input:focus + .label,
+.filled {
+  top: -10px;
+  color: #7e4ccb;
+  font-size: 16px;
+}
+
+.text_input::placeholder {
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.text_input:focus::placeholder {
+  opacity: 1;
+}
+
+.resultBox{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.searchInput.active .resultBox{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+  background: #efefef;
+}
+
+.resultBox li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.searchInput.active .resultBox li{
+  display: block;
+}
+.resultBox li:hover{
+  background: #efefef;
+}
