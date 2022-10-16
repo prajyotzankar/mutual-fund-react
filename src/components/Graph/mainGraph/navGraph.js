@@ -113,7 +113,7 @@ const navGraph = () => {
   // const mm = String(today.getMonth() + 1).padStart(2, "0"); //January is 0!
   // const yyyy = today.getFullYear();
 
-  const todayDate = mm + "-" + dd + "-" + yyyy;
+  // const todayDate = mm + "-" + dd + "-" + yyyy;
 
   const options = {
     responsive: true,
