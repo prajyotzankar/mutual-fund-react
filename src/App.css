@@ -1,3 +1,5 @@
-body{
-  background-color: #111B21;
+body {
+  background-color: #111b21;
+  display: flex;
+  justify-content: center;
 }

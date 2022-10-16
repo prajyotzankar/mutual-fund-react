@@ -1,0 +1,86 @@
+.input_container {
+  width: 350px;
+  position: relative;
+}
+.label {
+  position: absolute;
+  left: 10px;
+  top: 14px;
+  transition: all 0.2s;
+  padding: 0 2px;
+  z-index: 1;
+  color: #b3b3b3;
+}
+.text-input {
+  padding: 0.8rem;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #2f2c45;
+  background: #272530;
+  border-radius: 5px;
+  font-size: 18px;
+  outline: none;
+  transition: all 0.3s;
+  color: #fff;
+}
+
+.label::before {
+  content: "";
+  height: 5px;
+  background: #272530;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  z-index: -1;
+}
+
+.text_input:focus {
+  border: 2px solid #7e4ccb;
+}
+
+.text_input:focus + .label,
+.filled {
+  top: -10px;
+  color: #7e4ccb;
+  font-size: 16px;
+}
+
+.text_input::placeholder {
+  font-size: 16px;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.text_input:focus::placeholder {
+  opacity: 1;
+}
+
+select::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(0 0 0 / 30%);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+select::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+}
+
+select::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #140061;
+  border: 1px solid #2f4ac4;
+}
+
+select {
+  width: 20em;
+  height: 3em;
+  padding: 0 4em 0 1em;
+  color: white;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+
+
